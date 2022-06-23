@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title> Encriptador De Texto Alura</title>
+
+    </head>
+-    <body>
+        <header>
+            <img src="imagenes/Vector.png" alt="Logo Alura">
+        </header>
+
+        <main>
+            <section class="entrada-encriptar">
+                <textarea autofocus class="input-text" placeholder="Ingrese el Texto Aquí"></textarea>
+                <h6 class="text-aclaracion"><img src="imagenes/exclamacion.png"> letras minusculas y sin acento</h6>
+                <div class="botones ">
+                    <button type="button" onclick="botonEncriptar()" class="stlye-botonEncriptar" >Encriptar</button>
+                    <button type="button" onclick="botonDesencriptar()" class="style-botonDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="salida-encriptar">
+                <div class="muñeco ">
+                    <img src="imagenes/Muñeco.png">
+                </div>
+                <div class="caja-texto-noencontrado" >
+                    <h3>Ningun Mensaje Fue encontrado</h3>
+                </div>
+                <div>
+                <p class="parrafo">Ingrese el texto que desee encriptar o desencriptar. </textarea>
+                </div>
+                <div class="texto-resultado">
+                    <p class="parrafo-resultado" ></p>
+                </div>
+                <div class="boton-copiar">
+                    <button type="button" onclick="copiarTexto()" class="style-botonCopiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="copyright" >&copy Copyright Aquino Bajusz Tomas Gabriel - Challeng Encriptador - 2022</p>
+        </footer>
+        <script src="js/scripts.js"></script>
+
+    </body>
+
+
+</html>
